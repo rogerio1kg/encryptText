@@ -3,11 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="key.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="assets/css/app.css" />
     <title>Document</title>
   </head>
@@ -33,7 +31,7 @@
             </div>
             <div class="buttons">
                 <button type="button" class="btn-encrypt"><p>Criptografar</p><i class='bx bxs-lock-alt'></i></button>
-                <button type="button" class="btn-decrypt"><p>Descriptografar</p><i class='bx bxs-lock-alt'></i></button>
+                <button type="button" class="btn-decrypt"><p>Descriptografar</p><i class='bx bxs-lock-open-alt'></i></button>
             </div>
         </section>
         <section class="container-result">
@@ -41,9 +39,13 @@
                 <div class="result-output">
                     <textarea name="result" id="message-result" class="message-result" cols="30" rows="10" readonly></textarea>
                 </div>
-                <button type="button" class="btn-decrypt"><p>Descriptografar</p><i class='bx bxs-copy-alt'></i></button>
+                <button type="button" class="invisible btn-copy"><p>Copiar</p><i class='bx bxs-copy'></i></button>
             </div>
         </section>
     </main>
+
+    <script src="assets/js/encrypt.js" defer></script>
+    <script src="assets/js/validText.js" defer></script>
+    <script src="assets/js/copy.js" defer></script>
   </body>
 </html>

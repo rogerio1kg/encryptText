@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
+body {
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(165,148,233,1) 100%);
+    font-family: 'JetBrains Mono', monospace;
 
 header {
     background: #24233b;
@@ -37,7 +42,6 @@ header {
     -o-transition: 0.1s;
 }
 
-
 .container-main {
     display: flex;
     justify-content: space-around;
@@ -45,18 +49,18 @@ header {
 }
 
 .text-message {
-    width: 350px;
-    height: 400px;
+    width: 20em;
+    height: 35em;
     margin: 0 auto;
     background-color: #24233B;
-    border-radius: 8px;
+    border-radius: 20px;
     z-index: 1;
     box-shadow: 0px 10px 10px rgb(73, 70, 92);
     transition: 0.5s;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .text-message:hover {
@@ -83,24 +87,152 @@ header {
 }
 
 #message-text {
-    width: 300px;
-    height: 350px;
+    width: 20.4em;
+    height: 38em;
     resize: none;
     background-color: rgb(73, 70, 92);
-    border-radius: 5px;
+    border-radius: 15px;
     border: none;
     color: white;
     margin-top: 10px;
     margin-left: 2px;
     padding: 17px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 #message-text:focus {
     outline: none !important;
 }
 
-/* https://uiverse.io/alshahwan/ugly-emu-27 */
+.error-container {
+    margin-left: 15px;
+}
+
+.message-error li::before {
+    width: 20px;
+    height: 17px;
+    vertical-align: middle;
+    content: url(../images/exclamation.png);
+}
+
+.message-error li {
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+i {
+    color: white;
+}
+
+button {
+    background-color: #fff;
+    border: 1px solid #932ABC;
+    padding: 7px;
+    position: relative;
+    width: 9em;
+    height: 2em;
+    transition: 0.5s;
+    font-size: 13px;
+    border-radius: 0.4em;
+}
+
+button p {
+    position: absolute;
+    top: 0.4em;
+    left: 1.2em;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    color: #932ABC;
+    font-weight: bold;
+}
+
+.btn-encrypt {
+    width: 8.2em;
+}
+.btn-decrypt {
+    width: 10em;
+}
+
+button i {
+    position: absolute;
+    top: 0.45em;
+    right: 0.5em;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.5;
+    height: 1em;
+    fill: #FFF;
+}
+
+button:hover p {
+    left: 0.6em;
+    color: #FFF;
+}
+
+button:hover i {
+    opacity: 1;
+}
+
+button:hover {
+    background-color: #932ABC;
+}
+
+.container-result {
+    background-color: #FFF;
+    border-radius: 20px;
+    height: 35em;
+    padding-top: 21px;
+    padding: 4px;
+    text-align: center;
+    box-shadow: 12px 18px 35px #24233b;
+}
+
+.result-output {
+    display: flex;
+    align-items: center;
+    flex-direction: grid;
+}
+.message-result {
+    opacity: 50%;
+    width: 20em;
+    height: 39.5em;
+    position: relative;
+    border-color: transparent;
+    border-radius: 20px;
+}
+
+#message-result:placeholder-shown {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-image: url(../images/error.png);
+}
+
+#message-result:not(:placeholder-shown) {
+    background-color: #FFF;
+}
+
+.btn-copy {
+    width: 5.5em;
+    margin-left: 20px;
+}
+
+.invisible {
+    display: none;
+}
