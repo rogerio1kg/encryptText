@@ -1,0 +1,106 @@
+
+
+header {
+    background: #24233b;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 0 0 40px;
+    padding-right: 20px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.logo-image {
+    width: 70px;
+}
+
+.github, .linkedin {
+    width: 30px;
+}
+
+.logo-image, .github, .linkedin {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-image:hover, .github:hover, .linkedin:hover {
+    transition: 0.1s;
+    opacity: 50%;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+}
+
+
+.container-main {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.text-message {
+    width: 350px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #24233B;
+    border-radius: 8px;
+    z-index: 1;
+    box-shadow: 0px 10px 10px rgb(73, 70, 92);
+    transition: 0.5s;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.text-message:hover {
+    transform: translateY(-7px);
+    box-shadow: 0px 10px 10px black;
+    -webkit-transform: translateY(-7px);
+    -moz-transform: translateY(-7px);
+    -ms-transform: translateY(-7px);
+    -o-transform: translateY(-7px);
+}
+
+.text-container {
+    margin: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.message-text {
+    text-align: center;
+}
+
+#message-text {
+    width: 300px;
+    height: 350px;
+    resize: none;
+    background-color: rgb(73, 70, 92);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    margin-left: 2px;
+    padding: 17px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#message-text:focus {
+    outline: none !important;
+}
+
+/* https://uiverse.io/alshahwan/ugly-emu-27 */

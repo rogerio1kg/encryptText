@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><img class="logo-image" src="assets/images/logo-encrypt.png" /></a>
+      </div>
+      <div class="menu">
+        <a href="https://github.com/rogerio1kg"><img class="github" src="assets/images/github-logo-240.png" /></a>
+        <a href="https://linkedin.com/rogeriolevy"><img class="linkedin" src="assets/images/linkedin-logo-240.png" /></a>
+      </div>
+    </header>
+    <main class="container-main">
+        <section>
+            <div class="text-message">
+                <div class="text-container">
+                    <textarea name="message" id="message-text" class="message-text" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="error-container">
+                <ul class="message-error"></ul>
+            </div>
+            <div class="buttons">
+                <button type="button" class="btn-encrypt"><p>Criptografar</p><i class='bx bxs-lock-alt'></i></button>
+                <button type="button" class="btn-decrypt"><p>Descriptografar</p><i class='bx bxs-lock-alt'></i></button>
+            </div>
+        </section>
+        <section class="container-result">
+            <div class="output-message">
+                <div class="result-output">
+                    <textarea name="result" id="message-result" class="message-result" cols="30" rows="10" readonly></textarea>
+                </div>
+                <button type="button" class="btn-decrypt"><p>Descriptografar</p><i class='bx bxs-copy-alt'></i></button>
+            </div>
+        </section>
+    </main>
+  </body>
+</html>
