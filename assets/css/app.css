@@ -227,8 +227,9 @@ button:hover {
 }
 
 .btn-copy {
+    display: flex;
     width: 5.5em;
-    margin-left: 20px;
+    margin-left: 44%;
 }
 
 .invisible {
