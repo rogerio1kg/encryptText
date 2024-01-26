@@ -1,16 +1,10 @@
+let btnCopy = document.querySelector('.btn-copy');
 
-const btnCopy = document.querySelector('.btn-copy');
-
-btnCopy.addEventListener('click', () => {
-    const result = document.querySelector('.message-result');
-    result.select();
-    document.execCommand('copy');
-
-    const textMessage = document.querySelector('.message-text');
-
-    textMessage.value = '';
-    textMessage.focus();
-    result.textContent = '';
-
-    btnCopy.classList.add('invisible');
-})
+btnCopy.onclick =  function() {
+    message_result.select();
+    document.execCommand("copy");
+    message_text.value = "";
+    message_text.focus();
+    message_result.textContent = "";
+    btnCopy.classList.add("invisible");
+}

@@ -82,7 +82,7 @@ header {
     -o-border-radius: 5px;
 }
 
-.message-text {
+.message_text {
     text-align: center;
 }
 
@@ -209,7 +209,7 @@ button:hover {
     align-items: center;
     flex-direction: grid;
 }
-.message-result {
+.message_result {
     opacity: 50%;
     width: 20em;
     height: 39.5em;
@@ -218,13 +218,13 @@ button:hover {
     border-radius: 20px;
 }
 
-#message-result:placeholder-shown {
+#message_result:placeholder-shown {
     background-position: top;
     background-repeat: no-repeat;
     background-image: url(../images/error.png);
 }
 
-#message-result:not(:placeholder-shown) {
+#message_result:not(:placeholder-shown) {
     background-color: #FFF;
 }
 
