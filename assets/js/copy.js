@@ -1,10 +1,8 @@
-let btnCopy = document.querySelector('.btn-copy');
-
-btnCopy.onclick =  function() {
-    message_result.select();
+btnCopy.onclick = function () {
+    resultText.select();
     document.execCommand("copy");
-    message_text.value = "";
-    message_text.focus();
-    message_result.textContent = "";
+    textCrypt.value = "";
+    textCrypt.focus();
+    resultText.textContent = "";
     btnCopy.classList.add("invisible");
-}
+};

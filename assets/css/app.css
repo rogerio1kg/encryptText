@@ -4,7 +4,7 @@ body {
     background: rgb(255,255,255);
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(165,148,233,1) 100%);
     font-family: 'JetBrains Mono', monospace;
-
+}
 header {
     background: #24233b;
     border-radius: 15px;
@@ -112,6 +112,7 @@ header {
 }
 
 .message-error li::before {
+    padding-top: 80%;
     width: 20px;
     height: 17px;
     vertical-align: middle;
@@ -119,8 +120,8 @@ header {
 }
 
 .message-error li {
-    font-size: 20px;
-    margin-left: 25px;
+    list-style-type: none;
+    font-size: 13px;
 }
 
 
@@ -204,27 +205,24 @@ button:hover {
     box-shadow: 12px 18px 35px #24233b;
 }
 
-.result-output {
-    display: flex;
-    align-items: center;
-    flex-direction: grid;
-}
 .message_result {
-    opacity: 50%;
     width: 20em;
-    height: 39.5em;
+    height: 30em;
+    font-size: 15px;
     position: relative;
     border-color: transparent;
     border-radius: 20px;
+    padding: 0.5rem;
+    color:#932ABC
 }
 
-#message_result:placeholder-shown {
-    background-position: top;
+.message_result::placeholder-shown {
+    background-position: 80%;
     background-repeat: no-repeat;
     background-image: url(../images/error.png);
 }
 
-#message_result:not(:placeholder-shown) {
+.message_result:not(:placeholder-shown) {
     background-color: #FFF;
 }
 
